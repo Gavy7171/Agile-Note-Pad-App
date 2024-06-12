@@ -48,7 +48,7 @@
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 36);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -107,15 +107,16 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(375, 34);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(387, 34);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // richTextBox1
             // 
             this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox1.Location = new System.Drawing.Point(0, 33);
+            this.richTextBox1.Location = new System.Drawing.Point(0, 36);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(800, 417);
+            this.richTextBox1.Size = new System.Drawing.Size(800, 414);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "";
             // 
@@ -145,8 +146,8 @@
         private System.Windows.Forms.ToolStripMenuItem saveCtrlSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveAsCtrlShiftSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem printCtrlPToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        public System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }
 }
 
