@@ -41,20 +41,15 @@ namespace Note_Pad_App
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.ShowDialog();
             
-            if (string.IsNullOrEmpty(currentFilePath))
-            {
-                SaveAs();
-            }
-            else
-            {
-                File.WriteAllText(currentFilePath, richTextBox1.Text);
-            }
         }
 
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SaveAs();
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.ShowDialog();
         }
 
         private void SaveAs()
@@ -77,26 +72,15 @@ namespace Note_Pad_App
 
         private void printToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
-            PrintDocument printDocument = new PrintDocument();
-            printDocument.PrintPage += new PrintPageEventHandler(PrintDocument_PrintPage);
+            PrintDialog printDialog = new PrintDialog();
+            printDialog.ShowDialog();
 
-            
-            PrintDialog printDialog = new PrintDialog
-            {
-                Document = printDocument
-            };
-
-            if (printDialog.ShowDialog() == DialogResult.OK)
-            {
-                printDocument.Print();
-            }
         }
 
         private void PrintDocument_PrintPage(object sender, PrintPageEventArgs e)
         {
             
-            e.Graphics.DrawString(richTextBox1.Text, new Font("Arial", 12), Brushes.Black, e.MarginBounds);
+           
         }
 
         private void Exit()
@@ -170,6 +154,7 @@ namespace Note_Pad_App
             
             Form1 newForm = new Form1();
             newForm.Show();
+            
         }
     }
 }
