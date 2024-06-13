@@ -88,6 +88,7 @@
             this.saveCtrlSToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
             this.saveCtrlSToolStripMenuItem.Size = new System.Drawing.Size(387, 34);
             this.saveCtrlSToolStripMenuItem.Text = "Save                       ";
+            this.saveCtrlSToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // saveAsCtrlShiftSToolStripMenuItem
             // 
@@ -96,6 +97,7 @@
             | System.Windows.Forms.Keys.S)));
             this.saveAsCtrlShiftSToolStripMenuItem.Size = new System.Drawing.Size(387, 34);
             this.saveAsCtrlShiftSToolStripMenuItem.Text = "Save As                ";
+            this.saveAsCtrlShiftSToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
             // printCtrlPToolStripMenuItem
             // 
@@ -103,6 +105,7 @@
             this.printCtrlPToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
             this.printCtrlPToolStripMenuItem.Size = new System.Drawing.Size(387, 34);
             this.printCtrlPToolStripMenuItem.Text = "Print                         ";
+            this.printCtrlPToolStripMenuItem.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
