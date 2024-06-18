@@ -192,10 +192,14 @@ namespace Note_Pad_App
 
         private void pasteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            if (Clipboard.ContainsText())
+            {
+                richTextBox1.Paste();
+            }
         }
     }
-}
+    }
+
     
     
     
